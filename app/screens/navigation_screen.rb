@@ -8,8 +8,8 @@ class NavigationScreen < PM::TableScreen
         action: :swap_center_controller,
         arguments: HomeScreen
       },{
-        title: 'Hello World 2',
-        action: :swap_center_controller,
+        title: 'Map',
+        action: :open_map,
         arguments: HomeScreen
       }
       ]
@@ -20,4 +20,7 @@ class NavigationScreen < PM::TableScreen
     app_delegate.menu.center_controller = screen_class
   end
 
+  def open_map
+    open MyMapScreen.new(nav_bar: true)
+  end
 end

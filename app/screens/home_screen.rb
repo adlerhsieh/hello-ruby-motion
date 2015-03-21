@@ -7,11 +7,12 @@ class HomeScreen < PM::Screen
     set_attributes self.view, {
       background_color: hex_color("#D8D8D8")
     }
-    open MyMapScreen.new(nav_bar: true)
+    # open MyMapScreen.new(nav_bar: true)
   end
 
   def show_about
-    open AboutWebScreen.new(nav_bar: true)
+    # open AboutWebScreen.new(nav_bar: true)
+    open AboutScreen.new(nav_bar: true)
   end
 
   def show_menu
