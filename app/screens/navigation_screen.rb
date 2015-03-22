@@ -5,7 +5,8 @@ class NavigationScreen < PM::TableScreen
       cells: [{},
               {
         title: 'Hello World',
-        action: :swap_center_controller,
+        action: :home_screen,
+        # action: :swap_center_controller,
         arguments: HomeScreen
       },{
         title: 'Map',
@@ -22,5 +23,9 @@ class NavigationScreen < PM::TableScreen
 
   def open_map
     open MyMapScreen.new(nav_bar: true)
+  end
+
+  def home_screen
+    open HomeScreen.new(nav_bar: true)
   end
 end

@@ -1,5 +1,6 @@
 class HomeScreen < PM::TableScreen
   title '通訊錄'
+  searchable placeholder: "Search for a contact..."
 
   def on_load
     set_nav_bar_button :right, title: "About", action: :show_about
@@ -14,7 +15,9 @@ class HomeScreen < PM::TableScreen
     [{
       cells: Contact.all.map do |contact|
         {
-          title: contact.name
+          title: contact.name,
+          action: :edit_contact,
+          arguments: {contact: contact}
         }
       end
     }]
@@ -29,4 +32,7 @@ class HomeScreen < PM::TableScreen
     app_delegate.menu.show(:left)
   end
 
+  def edit_contact(args={})
+    open EditContactScreen.new(args), nav_bar: true, modal: true
+  end
 end
