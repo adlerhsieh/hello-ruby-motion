@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1E567F98B84A0366E91F6AE0"
-               BuildableName = "libPods-MMDrawerController.a"
-               BlueprintName = "Pods-MMDrawerController"
+               BlueprintIdentifier = "8C114674DFCFBE89B1206155"
+               BuildableName = "libPods-FXForms.a"
+               BlueprintName = "Pods-FXForms"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
