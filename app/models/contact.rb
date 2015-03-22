@@ -14,9 +14,4 @@ class Contact
     ]
   end
 
-  def self.new
-    
-  end
-
-  # todo: list contact info on home_Screen
 end

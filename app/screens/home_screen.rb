@@ -1,4 +1,4 @@
-class HomeScreen < PM::Screen
+class HomeScreen < PM::TableScreen
   title '通訊錄'
 
   def on_load
@@ -8,6 +8,16 @@ class HomeScreen < PM::Screen
       background_color: hex_color("#D8D8D8")
     }
     # open MyMapScreen.new(nav_bar: true)
+  end
+
+  def table_data
+    [{
+      cells: Contact.all.map do |contact|
+        {
+          title: contact.name
+        }
+      end
+    }]
   end
 
   def show_about
