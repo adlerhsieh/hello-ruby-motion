@@ -15,5 +15,6 @@ class AppDelegate < PM::Delegate
   def on_load(app, options)
       open_menu HomeScreen.new(nav_bar: true), left: NavigationScreen
       self.menu.controller(:left).class.name
+      App::Persistence['switch'] ||= false
   end
 end

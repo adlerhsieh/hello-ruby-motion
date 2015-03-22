@@ -1,5 +1,5 @@
 class HomeScreen < PM::Screen
-  title 'App Home'
+  title '通訊錄'
 
   def on_load
     set_nav_bar_button :right, title: "About", action: :show_about
