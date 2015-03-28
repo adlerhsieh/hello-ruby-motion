@@ -25,8 +25,6 @@ class AppDelegate < PM::Delegate
         end
       end
 
-      # row = Contact.new(name: "Alen")
-      # row.save
       if App::Persistence['setup'].nil?
         contacts = [
           ["Alan", "0900000000", "Taipei"],
@@ -47,6 +45,8 @@ class AppDelegate < PM::Delegate
         App::Persistence['setup'] = true
       end
 
+      # $rake debug=1 可開啟debug模式，會去偵測debugger_cmds檔案中設定的斷點
+      # 斷點撰寫方式： b app_delegate.rb:48
       open_menu HomeScreen.new(nav_bar: true), left: NavigationScreen
       self.menu.controller(:left).class.name
       App::Persistence['switch'] ||= false

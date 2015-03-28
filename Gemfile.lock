@@ -66,6 +66,7 @@ GEM
       dbt (~> 1.1.5)
     motion-sqlite3 (0.5.2)
       motion.h (~> 0.0.4)
+    motion_print (0.0.5)
     motion_record (0.0.3)
     nap (0.8.0)
     netrc (0.7.8)
@@ -91,6 +92,7 @@ DEPENDENCIES
   motion-kit
   motion-sqlite3
   motion.h!
+  motion_print
   motion_record
   rake
   sugarcube
