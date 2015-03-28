@@ -13,3 +13,8 @@ gem 'ProMotion-form'
 gem	'motion_record'
 gem	'motion-sqlite3'
 gem 'motion.h', :git => "https://github.com/kastiglione/motion.h"
+gem	'motion-appstore'
+  # 發佈
+  # $rake archive:distribution
+  # $motion validate APPLE帳號
+  # $motion upload APPLE帳號

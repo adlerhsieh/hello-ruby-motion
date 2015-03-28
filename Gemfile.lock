@@ -60,6 +60,7 @@ GEM
       bundler
     minitest (5.5.1)
     molinillo (0.2.3)
+    motion-appstore (1.0.6)
     motion-cocoapods (1.7.0)
       cocoapods (>= 0.34)
     motion-kit (0.17.0)
@@ -89,6 +90,7 @@ DEPENDENCIES
   ProMotion-map
   ProMotion-menu
   bubble-wrap
+  motion-appstore
   motion-kit
   motion-sqlite3
   motion.h!
