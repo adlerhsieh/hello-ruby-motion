@@ -9,3 +9,6 @@ gem 'ProMotion-map'
 gem 'bubble-wrap'
 gem 'motion-kit'
 gem 'ProMotion-form'
+gem	'motion_record'
+gem	'motion-sqlite3'
+gem 'motion.h', :git => "https://github.com/kastiglione/motion.h"

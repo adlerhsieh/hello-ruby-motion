@@ -21,7 +21,9 @@ class EditContactLayout < MK::Layout
     end
 
     constraints do
-      center.equals(:main)
+      # center.equals(:main)
+      top 10
+      left 80
       width 300
       height 200
     end

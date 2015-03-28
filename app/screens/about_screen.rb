@@ -6,8 +6,8 @@ class AboutScreen < PM::GroupedTableScreen
     @about_table_data ||= [{
       title: "Help",
       cells: [
-        {title: "Email"},
-        {title: "Chat"},
+        {title: "Setting 1"},
+        {title: "Setting 2"},
         {title: "switch",
          accessory: {
           view: :switch,

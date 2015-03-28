@@ -1,13 +1,20 @@
 class FormScreen < PM::FormScreen
+  attr_accessor :contact
+ 
   def form_data
     [{
-      title: "Account Info",
-      footer: "Footer",
+      title: "Account Information",
+      footer: "Some help text",
       cells: [{
-        name: "email",
-        title: "ID"
+        name: "tel",
+        title: "TEL",
+        value: self.contact.phone
+      }, {
+        name: "address",
+        title: "Address",
+        value: self.contact.address
       }]
-    },{
     }]
-  end  
+  end
+ 
 end

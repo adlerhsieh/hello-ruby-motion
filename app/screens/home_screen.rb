@@ -17,6 +17,7 @@ class HomeScreen < PM::TableScreen
         {
           title: contact.name,
           action: :edit_contact,
+          # 這邊傳出去的參數，要跟接的地方一致
           arguments: {contact: contact}
         }
       end
