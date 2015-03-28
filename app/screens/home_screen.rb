@@ -13,7 +13,7 @@ class HomeScreen < PM::TableScreen
 
   def table_data
     [{
-      cells: Contact.all.map do |contact|
+      cells: Contact.find_all.map do |contact|
         {
           title: contact.name,
           action: :edit_contact,

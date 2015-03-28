@@ -8,7 +8,7 @@ class FormScreen < PM::FormScreen
       cells: [{
         name: "tel",
         title: "TEL",
-        value: self.contact.phone
+        value: self.contact.tel
       }, {
         name: "address",
         title: "Address",
